@@ -1,13 +1,16 @@
 package internals
 
-import "github.com/spf13/cobra"
-import "os"
-import "fmt"
+import (
+	"fmt"
+	"os"
+
+	"github.com/spf13/cobra"
+)
 
 var rootCmd = cobra.Command{
-	Use: "randma",
+	Use:   "randma",
 	Short: "randma is a tool to solve leet code problems in GO",
-	Run: func(cmd *cobra.Command, args [] string) {
+	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("here we go")
 	},
 }

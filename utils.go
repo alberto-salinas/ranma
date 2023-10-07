@@ -1,25 +1,23 @@
 package ranma
 
-
 type QuestionMetadata struct {
 	Question string
-	Level string
-	Package string
+	Level    string
+	Package  string
 	FuncName string
 }
 
-
-var QuestionBank = map[string]*QuestionMetadata {
-	"reverse_linked_list": &QuestionMetadata {
+var QuestionBank = map[string]*QuestionMetadata{
+	"reverse_linked_list": {
 		Question: "Write a function that reverses a linked list",
-		Level: "medium",
-		Package: "linked_list",
+		Level:    "medium",
+		Package:  "linked_list",
 		FuncName: "ReverseList",
 	},
-	"dfs_search": &QuestionMetadata {
+	"dfs_search": {
 		Question: "Find a key K in a graph based data structure",
-		Level: "medium",
-		Package: "graph",
+		Level:    "medium",
+		Package:  "graph",
 		FuncName: "FindNodeDFS",
 	},
 }
