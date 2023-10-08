@@ -15,7 +15,7 @@ func init() {
 		Use:   "candidates",
 		Short: "Select a question from the bank of questions",
 		Run: func(cmd *cobra.Command, args []string) {
-			for key, _ := range ranma.QuestionBank {
+			for key := range ranma.QuestionBank {
 				fmt.Println(key)
 			}
 		},
